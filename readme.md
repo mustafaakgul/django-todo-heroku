@@ -25,6 +25,8 @@ git commit -m "--comm"
 git remote add origin  URL
 git push -u origin master
 
+pip3 install gunicorn
+
 HEROKU
 heroku create django-heroku-todo-test
 git add .
@@ -32,7 +34,6 @@ git status
 git commit -m "--comm"
 git push origin master
 git push heroku master
-pip3 install gunicorn
 
 Download git if not installed - 
 https://git-scm.com/downloads
