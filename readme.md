@@ -18,6 +18,16 @@ Recommended updating Django to v2.2, v3.2 or the latest version if you are using
 Register on Github and Create a Repository,
 https://github.com/
 
+git init
+git add .
+git status
+git commit -m "--comm"
+git remote add origin  URL
+git push -u origin master
+
+HEROKU
+heroku create django-heroku-todo-test
+
 Download git if not installed - 
 https://git-scm.com/downloads
 
