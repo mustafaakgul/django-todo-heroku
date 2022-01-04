@@ -31,7 +31,8 @@ git add .
 git status
 git commit -m "--comm"
 git push origin master
-
+git push heroku master
+pip3 install gunicorn
 
 Download git if not installed - 
 https://git-scm.com/downloads
