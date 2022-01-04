@@ -34,6 +34,15 @@ git status
 git commit -m "--comm"
 git push origin master
 git push heroku master
+heroku config:set DISABLE_COLLECTSTATIC=1
+heroku open
+heroku config:set DJANGO_SECRET_KEY="$s%o9-q^4q3c&0y=-6jt)+ytm!r)%5wjr5ti(x05pq(9"
+heroku config:set DJANGO_DEBUG=False
+heroku config:set DJANGO_ALLOWED_HOSTS='https://django-heroku-todo-test.herokuapp.com'
+heroku open
+heroku run bash
+python manage.py migrate
+pyhon manage.py createsuperuser admin admin admin@admin.com
 
 Download git if not installed - 
 https://git-scm.com/downloads
