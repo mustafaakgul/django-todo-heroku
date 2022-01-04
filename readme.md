@@ -27,6 +27,11 @@ git push -u origin master
 
 HEROKU
 heroku create django-heroku-todo-test
+git add .
+git status
+git commit -m "--comm"
+git push origin master
+
 
 Download git if not installed - 
 https://git-scm.com/downloads
