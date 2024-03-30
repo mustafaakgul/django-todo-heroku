@@ -1,3 +1,5 @@
+### Django project demonstrating Heroku deployment process
+
 Python Gitignore:
 https://github.com/github/gitignore/blob/main/Python.gitignore
 
@@ -9,11 +11,6 @@ pip freeze > requirements.txt
 
 Django Environment Variables:
 pip3 install django-environ
-
-Recommended updating Django to v2.2, v3.2 or the latest version if you are using any old version, if you are using v2.1.7 that will also work. 
-
-	pip install --upgrade django==2.2
-	pip install --upgrade django==3.2
 
 Register on Github and Create a Repository,
 https://github.com/
