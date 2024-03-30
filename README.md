@@ -6,62 +6,68 @@ https://github.com/github/gitignore/blob/main/Python.gitignore
 Heroku:
 https://devcenter.heroku.com/articles/getting-started-with-python#set-up
 
-Requirements.txt:
-pip freeze > requirements.txt
+#### How to Run
+* python3.12 -m venv venv
+* source venv/bin/activate
+* pip install -r requirements.txt
+* python manage.py makemigrations
+* python manage.py migrate
+* python manage.py createsuperuser
+* python manage.py runserver
 
-Django Environment Variables:
-pip3 install django-environ
+##### Requirements.txt:
+* pip freeze > requirements.txt
 
-Register on Github and Create a Repository,
-https://github.com/
+##### Django Environment Variables:
+* pip3 install django-environ
 
-git init
-git add .
-git status
-git commit -m "--comm"
-git remote add origin  URL
-git push -u origin master
+##### Register on Github and Create a Repository,
+* Go To https://github.com/
+* git init
+* git add .
+* git status
+* git commit -m "--comm"
+* git remote add origin  URL
+* git push -u origin master
+* pip3 install gunicorn
 
-pip3 install gunicorn
+##### HEROKU
+* heroku create django-heroku-todo-test
+* git add .
+* git status
+* git commit -m "--comm"
+* git push origin master
+* git push heroku master
+* heroku config:set DISABLE_COLLECTSTATIC=1
+* heroku open
+* heroku config:set DJANGO_SECRET_KEY="$s%o9-q^4q3c&0y=-6jt)+ytm!r)%5wjr5ti(x05pq(9"
+* heroku config:set DJANGO_DEBUG=False
+* heroku config:set DJANGO_ALLOWED_HOSTS='https://django-heroku-todo-test.herokuapp.com'
+* heroku open
+* heroku run bash
+* python manage.py migrate
+* pyhon manage.py createsuperuser admin admin admin@admin.com
 
-HEROKU
-heroku create django-heroku-todo-test
-git add .
-git status
-git commit -m "--comm"
-git push origin master
-git push heroku master
-heroku config:set DISABLE_COLLECTSTATIC=1
-heroku open
-heroku config:set DJANGO_SECRET_KEY="$s%o9-q^4q3c&0y=-6jt)+ytm!r)%5wjr5ti(x05pq(9"
-heroku config:set DJANGO_DEBUG=False
-heroku config:set DJANGO_ALLOWED_HOSTS='https://django-heroku-todo-test.herokuapp.com'
-heroku open
-heroku run bash
-python manage.py migrate
-pyhon manage.py createsuperuser admin admin admin@admin.com
+##### Download git if not installed - 
+* https://git-scm.com/downloads
 
-Download git if not installed - 
-https://git-scm.com/downloads
+##### Check git version to confirm the download, 
+* git --version
 
-Check git version to confirm the download, 
-	git --version
+##### Register on Heroku,
+* https://www.heroku.com/
 
+##### Download Heroku CLI - 
+* https://devcenter.heroku.com/articles/getting-started-with-python#set-up
 
-Register on Heroku,
-https://www.heroku.com/
-
-Download Heroku CLI - 
-https://devcenter.heroku.com/articles/getting-started-with-python#set-up
-
-Test with ‘heroku’ command in the new terminal then login using ‘heroku login’. 
-	heroku
-	heroku login
+##### Test with ‘heroku’ command in the new terminal then login using ‘heroku login’. 
+* heroku
+* heroku login
 
 
-In base folder create requirements.txt file to get all required dependencies,
-	pip freeze
-	pip freeze > requirements.txt
+###### In base folder create requirements.txt file to get all required dependencies,
+* pip freeze
+*  freeze > requirements.txt
 
 
 In base folder create .gitignore file to avoid unwanted files on server, 
